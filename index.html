@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexDev | 2027 Interactive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo magnetic">NX_DEV.</div>
+        <ul class="nav-links">
+            <li class="magnetic"><a href="#about">About</a></li>
+            <li class="magnetic"><a href="#projects">Projects</a></li>
+            <li class="magnetic"><a href="#contact">Terminal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="LIVING DESIGN">LIVING DESIGN</h1>
+                </div>
+                <h2 class="subtitle">Creative Developer & Interactive Engineer</h2>
+                <p class="description">Building the bridge between logical systems and emotional experiences through WebGL, AI integration, and generative art.</p>
+                <a href="#projects" class="btn primary-btn magnetic">Explore Projects</a>
+            </div>
+            <div class="hero-avatar">
+                <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=800&auto=format&fit=crop" alt="Abstract Avatar">
+                <div class="avatar-glow"></div>
+            </div>
+        </section>
+
+        <!-- About / Terminal Section -->
+        <section class="terminal-section" id="about">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <div class="terminal-title">nexdev_agent@2027: ~</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <!-- Typing effect injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">FEATURED <span class="neon-text">SYSTEMS</span></h2>
+            <div class="bento-grid">
+                <!-- Project 1 (Large) -->
+                <div class="bento-card large group magnetic-area">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1200&auto=format&fit=crop" alt="AI Neural Mesh">
+                    </div>
+                    <div class="card-content">
+                        <h3>NeuroSync AI</h3>
+                        <p>Real-time machine learning visualization platform using WebGL and TensorFlow.js.</p>
+                        <div class="tech-stack"><span>WebGL</span><span>React</span><span>Python</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Small) -->
+                <div class="bento-card small group magnetic-area">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=600&auto=format&fit=crop" alt="Web3 Vault">
+                    </div>
+                    <div class="card-content">
+                        <h3>Decentral Vault</h3>
+                        <p>Zero-knowledge proof secured digital asset vault.</p>
+                        <div class="tech-stack"><span>Solidity</span><span>Next.js</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Small) -->
+                <div class="bento-card small group magnetic-area">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="Data Flow">
+                    </div>
+                    <div class="card-content">
+                        <h3>CyberData Dash</h3>
+                        <p>High-frequency trading data visualization interface.</p>
+                        <div class="tech-stack"><span>D3.js</span><span>WebSockets</span></div>
+                    </div>
+                </div>
+                
+                <!-- Skills Card -->
+                <div class="bento-card medium dark-glass">
+                    <h3>Core Capabilities</h3>
+                    <ul class="skills-list">
+                        <li>Advanced DOM Manipulation</li>
+                        <li>GLSL / Shader Programming</li>
+                        <li>LLM Prompt Engineering</li>
+                        <li>Interactive Motion Design (GSAP)</li>
+                        <li>High Performance Rust/WASM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">INITIALIZE <span class="neon-text">CONTACT</span></h2>
+            <div class="contact-glass">
+                <p>Seeking collaborations on innovative digital experiences.</p>
+                <a href="mailto:hello@example.com" class="btn outline-btn magnetic">hello@example.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2027 NexDev. All systems operational.</p>
+    </footer>
+
+    <script src="js/terminal.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
